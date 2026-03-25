@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>scorerstable.com | Fair-Play concept</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background:#06111f; }
+    .glass { backdrop-filter: blur(14px); }
+    .tab-btn.active {
+      background: white;
+      color: #0f172a;
+    }
+    .tab-panel { display:none; }
+    .tab-panel.active { display:block; }
+    .faq-content { display:none; }
+    .faq-item.open .faq-content { display:block; }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+  </style>
+</head>
+<body class="min-h-screen bg-[#06111f] text-white">
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-[#07111dcc]/80 glass">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-10 lg:px-12">
+      <div class="flex items-center gap-3">
+        <div class="flex h-10 w-10 items-center justify-center rounded-2xl border border-cyan-400/20 bg-cyan-400/10 text-cyan-300">
+          ▣
+        </div>
+        <div>
+          <p class="text-sm text-slate-400">Fair-Play concept</p>
+          <p class="font-semibold text-white">scorerstable.com</p>
+        </div>
+      </div>
+      <div class="hidden items-center gap-3 md:flex">
+        <a href="#dealer-section" class="rounded-full border border-white/10 bg-white/[0.03] px-5 py-3 text-white transition hover:bg-white/[0.08]">Find Dealer</a>
+        <a href="#quote-section" class="rounded-full bg-cyan-400 px-5 py-3 text-slate-950 transition hover:bg-cyan-300">Request Quote</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="border-b border-white/10 bg-[#06111f] px-6 py-4 md:px-10 lg:px-12">
+    <div class="mx-auto max-w-7xl">
+      <div class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+        <p class="text-sm text-slate-400">Condensed navigation with grouped content areas</p>
+        <div class="flex w-full flex-wrap gap-2 rounded-2xl border border-white/10 bg-white/[0.03] p-2 md:w-auto">
+          <button class="tab-btn active rounded-xl px-4 py-2 text-sm transition" data-tab="home">Home</button>
+          <button class="tab-btn rounded-xl px-4 py-2 text-sm text-white transition" data-tab="products">Products</button>
+          <button class="tab-btn rounded-xl px-4 py-2 text-sm text-white transition" data-tab="planning">Planning</button>
+          <button class="tab-btn rounded-xl px-4 py-2 text-sm text-white transition" data-tab="marketing">Marketing</button>
+          <button class="tab-btn rounded-xl px-4 py-2 text-sm text-white transition" data-tab="contact">Contact</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="home" class="tab-panel active">
+      <section class="relative min-h-[90vh] overflow-hidden border-b border-white/10">
+        <img
+          src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1800&q=80"
+          alt="LED scorer's table in live basketball arena"
+          class="absolute inset-0 h-full w-full scale-105 object-cover"
+        />
+        <div class="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-black/20"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(34,211,238,0.16),transparent_28%)]"></div>
+
+        <div class="relative mx-auto flex min-h-[90vh] max-w-7xl items-center px-6 py-16 md:px-10 lg:px-12">
+          <div class="max-w-4xl">
+            <div class="mb-6 inline-flex rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-1 text-cyan-300">
+              scorerstable.com • Fair-Play scorer’s tables
+            </div>
+            <h1 class="max-w-3xl text-4xl font-bold leading-tight text-white md:text-6xl xl:text-7xl">
+              Transform your game-day experience.
+            </h1>
+            <p class="mt-5 max-w-2xl text-lg leading-8 text-white/80 md:text-xl">
+              LED scorer’s tables that elevate your venue, drive sponsorship revenue, and bring your court to life.
+            </p>
+            <div class="mt-8 flex flex-wrap gap-4">
+              <a href="#quote-section" class="rounded-full bg-cyan-400 px-6 py-4 text-slate-950 transition hover:bg-cyan-300">
+                Get a Quote →
+              </a>
+              <a href="#models" class="rounded-full border border-white/20 bg-white/5 px-6 py-4 text-white transition hover:bg-white hover:text-slate-950">
+                ▶ View Models
+              </a>
+            </div>
+            <div class="mt-10 grid gap-4 sm:grid-cols-3">
+              <div class="rounded-2xl border border-white/10 bg-[#06111f]/55 p-5 backdrop-blur-sm">
+                <p class="text-sm font-medium text-white">High-impact visuals</p>
+                <p class="mt-2 text-sm text-white/75">Courtside LED energy</p>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-[#06111f]/55 p-5 backdrop-blur-sm">
+                <p class="text-sm font-medium text-white">Sponsorship revenue</p>
+                <p class="mt-2 text-sm text-white/75">More ad inventory</p>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-[#06111f]/55 p-5 backdrop-blur-sm">
+                <p class="text-sm font-medium text-white">Broadcast ready</p>
+                <p class="mt-2 text-sm text-white/75">Sharp on camera</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-7xl px-6 py-16 text-white md:px-10 lg:px-12">
+        <div class="grid gap-8 lg:grid-cols-[1.1fr_.9fr] lg:items-center">
+          <div>
+            <div class="mb-4 inline-flex rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-1 text-cyan-300">
+              Real venue impact
+            </div>
+            <h2 class="text-3xl font-semibold tracking-tight text-white md:text-5xl">The hero should roll directly into visual proof.</h2>
+            <p class="mt-4 max-w-2xl text-base leading-8 text-slate-300 md:text-lg">
+              Keep the momentum going with real install photography, short headlines, and quick calls to action instead of long explanation blocks.
+            </p>
+            <div class="mt-8 grid gap-4 sm:grid-cols-2">
+              <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-5">
+                <p class="text-sm font-medium text-white">Arena feel</p>
+                <p class="mt-2 text-sm leading-7 text-slate-300">Show the scale, seating, and crowd context.</p>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-5">
+                <p class="text-sm font-medium text-white">Sponsor value</p>
+                <p class="mt-2 text-sm leading-7 text-slate-300">Keep sponsor exposure and branding visible.</p>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-5">
+                <p class="text-sm font-medium text-white">Real install</p>
+                <p class="mt-2 text-sm leading-7 text-slate-300">Use actual Fair-Play venue imagery whenever possible.</p>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-5">
+                <p class="text-sm font-medium text-white">Fast CTA</p>
+                <p class="mt-2 text-sm leading-7 text-slate-300">Push to quote, dealer, or models quickly.</p>
+              </div>
+            </div>
+            <div class="mt-8 flex flex-wrap gap-3">
+              <a href="#dealer-section" class="rounded-full bg-cyan-400 px-5 py-3 text-slate-950 transition hover:bg-cyan-300">Find Dealer</a>
+              <a href="#quote-section" class="rounded-full border border-white/10 bg-white/[0.03] px-5 py-3 text-white transition hover:bg-white/[0.08]">Request Pricing</a>
+            </div>
+          </div>
+
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04] sm:col-span-2">
+              <div class="relative h-72 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1547347298-4074fc3086f0?auto=format&fit=crop&w=1200&q=80" alt="Real arena atmosphere" class="h-full w-full object-cover" />
+                <div class="absolute inset-0 bg-gradient-to-t from-[#06111f] via-[#06111f]/20 to-transparent"></div>
+                <div class="absolute bottom-4 left-4 right-4"><p class="text-lg font-semibold text-white">Real arena atmosphere</p></div>
+              </div>
+            </div>
+            <div class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04]">
+              <div class="relative h-52 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=1200&q=80" alt="High school gym energy" class="h-full w-full object-cover" />
+                <div class="absolute inset-0 bg-gradient-to-t from-[#06111f] via-[#06111f]/20 to-transparent"></div>
+                <div class="absolute bottom-4 left-4 right-4"><p class="text-lg font-semibold text-white">High school gym energy</p></div>
+              </div>
+            </div>
+            <div class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04]">
+              <div class="relative h-52 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1511884642898-4c92249e20b6?auto=format&fit=crop&w=1200&q=80" alt="Broadcast-style venue setup" class="h-full w-full object-cover" />
+                <div class="absolute inset-0 bg-gradient-to-t from-[#06111f] via-[#06111f]/20 to-transparent"></div>
+                <div class="absolute bottom-4 left-4 right-4"><p class="text-lg font-semibold text-white">Broadcast-style venue setup</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="models" class="mx-auto max-w-7xl px-6 py-24 text-white md:px-10 lg:px-12">
+        <div class="mx-auto mb-10 max-w-3xl text-center">
+          <div class="mb-4 inline-flex rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-1 text-cyan-300">Product lineup</div>
+          <h2 class="text-3xl font-semibold tracking-tight text-white md:text-5xl">Put the real model family front and center</h2>
+          <p class="mt-4 text-base leading-7 text-slate-300 md:text-lg">
+            Replace spec-heavy layouts with high-impact model cards, product photography, and only the most important supporting copy.
+          </p>
+        </div>
+
+        <div class="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+          <article class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04]">
+            <div class="relative h-64 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1547347298-4074fc3086f0?auto=format&fit=crop&w=1200&q=80" alt="CST-0803-4" class="h-full w-full object-cover">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#06111f] via-[#06111f]/35 to-transparent"></div>
+              <div class="absolute bottom-5 left-5 right-5">
+                <h3 class="text-2xl font-semibold text-white">CST-0803-4</h3>
+                <p class="mt-2 text-sm text-white/85">8-foot digital courtside table</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="overflow-hidden rounded-[2rem] border border-cyan-300/30 bg-white/[0.04] ring-1 ring-cyan-400/30">
+            <div class="relative h-64 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1200&q=80" alt="CST-1003-4" class="h-full w-full object-cover">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#06111f] via-[#06111f]/35 to-transparent"></div>
+              <div class="absolute left-5 top-5 inline-flex rounded-full border border-white/20 bg-white/10 px-3 py-1 text-sm">Featured</div>
+              <div class="absolute bottom-5 left-5 right-5">
+                <h3 class="text-2xl font-semibold text-white">CST-1003-4</h3>
+                <p class="mt-2 text-sm text-white/85">Featured 10-foot LED model</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04]">
+            <div class="relative h-64 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1504450758481-7338eba7524a?auto=format&fit=crop&w=1200&q=80" alt="CST-1600-10" class="h-full w-full object-cover">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#06111f] via-[#06111f]/35 to-transparent"></div>
+              <div class="absolute bottom-5 left-5 right-5">
+                <h3 class="text-2xl font-semibold text-white">CST-1600-10</h3>
+                <p class="mt-2 text-sm text-white/85">Integrated scoring presentation</p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="mt-8 flex flex-col items-center gap-4 rounded-[2rem] border border-white/10 bg-white/[0.04] px-6 py-6 text-center md:flex-row md:justify-between md:text-left">
+          <div>
+            <p class="text-lg font-semibold text-white">Have a model in mind?</p>
+            <p class="mt-1 text-sm text-slate-300">Compare the lineup visually, then request pricing or talk to a dealer.</p>
+          </div>
+          <div class="flex flex-wrap gap-3">
+            <a href="#quote-section" class="rounded-full bg-cyan-400 px-5 py-3 text-slate-950 transition hover:bg-cyan-300">Get Quote</a>
+            <a href="#dealer-section" class="rounded-full border border-white/10 bg-white/[0.03] px-5 py-3 text-white transition hover:bg-white/[0.08]">Find Dealer</a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="border-t border-white/10 bg-[#040911] px-6 py-10 text-slate-400 md:px-10 lg:px-12">
+        <div class="mx-auto flex max-w-7xl flex-col gap-6 md:flex-row md:items-center md:justify-between">
+          <div>
+            <p class="text-lg font-semibold text-white">scorerstable.com</p>
+            <p class="mt-1 text-sm">Visual-first concept direction for Fair-Play scorer’s tables.</p>
+          </div>
+          <div class="flex flex-wrap gap-3 text-sm">
+            <span class="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-slate-300">Home</span>
+            <span class="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-slate-300">Products</span>
+            <span class="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-slate-300">Planning</span>
+            <span class="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-slate-300">Marketing</span>
+            <span class="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-slate-300">Contact</span>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <section id="products" class="tab-panel bg-[#06111f]">
+      <section class="mx-auto max-w-7xl px-6 py-24 text-white md:px-10 lg:px-12">
+        <div class="mx-auto mb-10 max-w-3xl text-center">
+          <div class="mb-4 inline-flex rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-1 text-cyan-300">Product Experience</div>
+          <h2 class="text-3xl font-semibold tracking-tight text-white md:text-5xl">See it. Feel it. Sell it.</h2>
+          <p class="mt-4 text-base leading-7 text-slate-300 md:text-lg">Less text. More imagery, video, and visual proof of impact.</p>
+        </div>
+
+        <div class="mb-8 flex flex-wrap items-center justify-center gap-3">
+          <a href="#quote-section" class="rounded-full bg-cyan-400 px-5 py-3 text-slate-950 transition hover:bg-cyan-300">Request Demo</a>
+          <a href="#dealer-section" class="rounded-full border border-white/10 bg-white/[0.03] px-5 py-3 text-white transition hover:bg-white/[0.08]">Find Dealer</a>
+        </div>
+
+        <div class="grid gap-8 md:grid-cols-3">
+          <article class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04]">
+            <div class="relative h-64 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1200&q=80" alt="Game Day Energy" class="h-full w-full object-cover">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#06111f] via-[#06111f]/35 to-transparent"></div>
+              <div class="absolute bottom-5 left-5 right-5"><h3 class="text-2xl font-semibold">Game Day Energy</h3><p class="mt-2 text-sm text-white/85">Bring your court to life</p></div>
+            </div>
+          </article>
+          <article class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04]">
+            <div class="relative h-64 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=1200&q=80" alt="Sponsor Visibility" class="h-full w-full object-cover">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#06111f] via-[#06111f]/35 to-transparent"></div>
+              <div class="absolute bottom-5 left-5 right-5"><h3 class="text-2xl font-semibold">Sponsor Visibility</h3><p class="mt-2 text-sm text-white/85">Turn your table into revenue</p></div>
+            </div>
+          </article>
+          <article class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04]">
+            <div class="relative h-64 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=1200&q=80" alt="Broadcast Ready" class="h-full w-full object-cover">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#06111f] via-[#06111f]/35 to-transparent"></div>
+              <div class="absolute bottom-5 left-5 right-5"><h3 class="text-2xl font-semibold">Broadcast Ready</h3><p class="mt-2 text-sm text-white/85">Built for camera + crowd</p></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="mt-16 grid items-center gap-8 md:grid-cols-2">
+          <div class="overflow-hidden rounded-[2rem] border border-white/10">
+            <iframe class="h-[320px] w-full" src="https://www.youtube.com/embed/ysz5S6PUM-U" title="Scorer Table Demo" allowfullscreen></iframe>
+          </div>
+          <div>
+            <h3 class="text-3xl font-semibold text-white">Watch it in action</h3>
+            <p class="mt-4 text-slate-300">Short video. Big impression. Show motion, sponsor value, and real game-day atmosphere.</p>
+            <a href="#quote-section" class="mt-6 inline-block rounded-full bg-cyan-400 px-5 py-3 text-slate-950 transition hover:bg-cyan-300">Request Demo</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="dealer-section" class="mx-auto max-w-7xl px-6 py-24 text-white md:px-10 lg:px-12">
+        <div class="mx-auto mb-10 max-w-3xl text-center">
+          <div class="mb-4 inline-flex rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-1 text-cyan-300">Dealers</div>
+          <h2 class="text-3xl font-semibold tracking-tight text-white md:text-5xl">Lead with region visuals and simple next steps</h2>
+          <p class="mt-4 text-base leading-7 text-slate-300 md:text-lg">Keep the locator visual and clean, then route buyers to the right partner fast.</p>
+        </div>
+        <div class="grid gap-8 md:grid-cols-3">
+          <article class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04]">
+            <div class="relative h-64 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1200&q=80" alt="Midwest" class="h-full w-full object-cover">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#06111f] via-[#06111f]/35 to-transparent"></div>
+              <div class="absolute bottom-5 left-5 right-5"><h3 class="text-2xl font-semibold">Midwest</h3><p class="mt-2 text-sm text-white/85">Missouri, Illinois, Iowa, Kansas</p></div>
+            </div>
+          </article>
+          <article class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04]">
+            <div class="relative h-64 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" alt="South" class="h-full w-full object-cover">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#06111f] via-[#06111f]/35 to-transparent"></div>
+              <div class="absolute bottom-5 left-5 right-5"><h3 class="text-2xl font-semibold">South</h3><p class="mt-2 text-sm text-white/85">Texas, Oklahoma, Arkansas, Louisiana</p></div>
+            </div>
+          </article>
+          <article class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04]">
+            <div class="relative h-64 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80" alt="Southeast" class="h-full w-full object-cover">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#06111f] via-[#06111f]/35 to-transparent"></div>
+              <div class="absolute bottom-5 left-5 right-5"><h3 class="text-2xl font-semibold">Southeast</h3><p class="mt-2 text-sm text-white/85">Tennessee, Georgia, Alabama, Florida</p></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <footer class="border-t border-white/10 bg-[#040911] px-6 py-10 text-slate-400 md:px-10 lg:px-12">
+        <div class="mx-auto max-w-7xl">
+          <p class="text-lg font-semibold text-white">scorerstable.com</p>
+        </div>
+      </footer>
+    </section>
+
+    <section id="planning" class="tab-panel bg-[#06111f]">
+      <section class="border-y border-white/10 bg-white/[0.03] px-6 py-24 text-white md:px-10 lg:px-12">
+        <div class="mx-auto max-w-7xl">
+          <div class="mx-auto mb-10 max-w-3xl text-center">
+            <div class="mb-4 inline-flex rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-1 text-cyan-300">Pricing</div>
+            <h2 class="text-3xl font-semibold tracking-tight text-white md:text-5xl">Quick pricing. Strong visuals.</h2>
+            <p class="mt-4 text-base leading-7 text-slate-300 md:text-lg">Keep pricing short and visual. Buyers should grasp the tiers in seconds, not paragraphs.</p>
+          </div>
+          <div class="mb-8 flex flex-wrap items-center justify-center gap-3">
+            <a href="#quote-section" class="rounded-full bg-cyan-400 px-5 py-3 text-slate-950 transition hover:bg-cyan-300">Request Pricing</a>
+            <a href="#roi-section" class="rounded-full border border-white/10 bg-white/[0.03] px-5 py-3 text-white transition hover:bg-white/[0.08]">Calculate ROI</a>
+          </div>
+          <div class="grid gap-8 lg:grid-cols-3">
+            <article class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04]">
+              <div class="relative h-72">
+                <img src="https://images.unsplash.com/photo-1547347298-4074fc3086f0?auto=format&fit=crop&w=1200&q=80" alt="Basic package" class="h-full w-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#06111f] via-[#06111f]/30 to-transparent"></div>
+                <div class="absolute bottom-5 left-5 right-5"><h3 class="text-2xl font-semibold">Basic</h3><p class="mt-2 text-3xl font-semibold text-white">$20K-$25K</p></div>
+              </div>
+            </article>
+            <article class="overflow-hidden rounded-[2rem] border border-cyan-300/40 bg-white/[0.04] ring-1 ring-cyan-400/30">
+              <div class="relative h-72">
+                <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1200&q=80" alt="Pro package" class="h-full w-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#06111f] via-[#06111f]/30 to-transparent"></div>
+                <div class="absolute left-5 top-5 inline-flex rounded-full border border-white/20 bg-white/10 px-3 py-1 text-sm">Best Value</div>
+                <div class="absolute bottom-5 left-5 right-5"><h3 class="text-2xl font-semibold">Pro</h3><p class="mt-2 text-3xl font-semibold text-white">$25K-$35K</p></div>
+              </div>
+            </article>
+            <article class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04]">
+              <div class="relative h-72">
+                <img src="https://images.unsplash.com/photo-1504450758481-7338eba7524a?auto=format&fit=crop&w=1200&q=80" alt="Elite package" class="h-full w-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#06111f] via-[#06111f]/30 to-transparent"></div>
+                <div class="absolute bottom-5 left-5 right-5"><h3 class="text-2xl font-semibold">Elite</h3><p class="mt-2 text-3xl font-semibold text-white">$35K-$50K+</p></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="roi-section" class="border-y border-white/10 bg-white/[0.03] px-6 py-24 text-white md:px-10 lg:px-12">
+        <div class="mx-auto max-w-7xl">
+          <div class="mx-auto mb-10 max-w-3xl text-center">
+            <div class="mb-4 inline-flex rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-1 text-cyan-300">ROI</div>
+            <h2 class="text-3xl font-semibold tracking-tight text-white md:text-5xl">Fast numbers. No clutter.</h2>
+            <p class="mt-4 text-base leading-7 text-slate-300 md:text-lg">Keep the calculator useful and visual so buyers can get to the takeaway immediately.</p>
+          </div>
+          <div class="grid gap-8 lg:grid-cols-[.9fr_1.1fr]">
+            <div class="rounded-[2rem] border border-white/10 bg-white/[0.04] p-8">
+              <div class="space-y-5">
+                <div>
+                  <label class="block text-sm text-slate-200">Number of Sponsors</label>
+                  <input id="sponsors" type="number" value="8" class="mt-2 w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 text-white outline-none" />
+                </div>
+                <div>
+                  <label class="block text-sm text-slate-200">Average Sponsorship Value</label>
+                  <input id="price" type="number" value="1500" class="mt-2 w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 text-white outline-none" />
+                </div>
+                <div>
+                  <label class="block text-sm text-slate-200">Estimated System Cost</label>
+                  <input id="cost" type="number" value="30000" class="mt-2 w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 text-white outline-none" />
+                </div>
+                <div>
+                  <label class="block text-sm text-slate-200">Years of Use</label>
+                  <input id="years" type="number" value="5" class="mt-2 w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 text-white outline-none" />
+                </div>
+              </div>
+            </div>
+            <div class="grid gap-6 sm:grid-cols-2">
+              <div class="rounded-[2rem] border border-white/10 bg-white/[0.04] p-8">
+                <p class="text-sm text-slate-400">Annual Revenue</p>
+                <p id="annualRevenue" class="mt-3 text-3xl font-semibold">$12,000</p>
+              </div>
+              <div class="rounded-[2rem] border border-white/10 bg-white/[0.04] p-8">
+                <p class="text-sm text-slate-400">Payback Period</p>
+                <p id="payback" class="mt-3 text-3xl font-semibold">2.5 years</p>
+              </div>
+              <div class="rounded-[2rem] border border-white/10 bg-white/[0.04] p-8">
+                <p class="text-sm text-slate-400">Total Revenue</p>
+                <p id="totalRevenue" class="mt-3 text-3xl font-semibold">$60,000</p>
+              </div>
+              <div class="rounded-[2rem] border border-white/10 bg-white/[0.04] p-8">
+                <p class="text-sm text-slate-400">Projected Profit</p>
+                <p id="profit" class="mt-3 text-3xl font-semibold">$30,000</p>
+              </div>
+              <div class="rounded-[2rem] border border-cyan-400/20 bg-cyan-400/10 p-7 sm:col-span-2">
+                <p class="text-sm text-slate-100">Use this section to show quick payback and move buyers toward a quote request.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-5xl px-6 py-24 text-white md:px-10">
+        <div class="mx-auto mb-10 max-w-3xl text-center">
+          <div class="mb-4 inline-flex rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-1 text-cyan-300">FAQ</div>
+          <h2 class="text-3xl font-semibold tracking-tight text-white md:text-5xl">Keep answers short</h2>
+          <p class="mt-4 text-base leading-7 text-slate-300 md:text-lg">A few strong questions are enough when the site already communicates visually.</p>
+        </div>
+
+        <div class="space-y-4">
+          <div class="faq-item rounded-[1.6rem] border border-white/10 bg-white/[0.04] px-6 open">
+            <button class="faq-toggle flex w-full items-center justify-between py-4 text-left text-lg text-white" type="button">
+              <span>What is a digital scorer’s table?</span>
+              <span class="faq-icon text-2xl transition-transform">+</span>
+            </button>
+            <div class="faq-content pb-6 text-sm leading-7 text-slate-300">
+              A digital courtside table uses LED display technology to show branding, sponsor ads, motion graphics, and game-day messaging.
+            </div>
+          </div>
+
+          <div class="faq-item rounded-[1.6rem] border border-white/10 bg-white/[0.04] px-6">
+            <button class="faq-toggle flex w-full items-center justify-between py-4 text-left text-lg text-white" type="button">
+              <span>Who uses these scorer’s tables?</span>
+              <span class="faq-icon text-2xl transition-transform">+</span>
+            </button>
+            <div class="faq-content pb-6 text-sm leading-7 text-slate-300">
+              High schools, colleges, recreation centers, multi-purpose sports venues, and professional environments all use digital scorer’s tables.
+            </div>
+          </div>
+
+          <div class="faq-item rounded-[1.6rem] border border-white/10 bg-white/[0.04] px-6">
+            <button class="faq-toggle flex w-full items-center justify-between py-4 text-left text-lg text-white" type="button">
+              <span>Why do schools buy LED scorer’s tables?</span>
+              <span class="faq-icon text-2xl transition-transform">+</span>
+            </button>
+            <div class="faq-content pb-6 text-sm leading-7 text-slate-300">
+              To modernize presentation, improve sponsor visibility, and create more valuable advertising inventory.
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id="marketing" class="tab-panel bg-[#06111f]">
+      <section class="mx-auto max-w-7xl px-6 py-24 text-white md:px-10 lg:px-12">
+        <div class="mx-auto mb-10 max-w-3xl text-center">
+          <div class="mb-4 inline-flex rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-1 text-cyan-300">Marketing</div>
+          <h2 class="text-3xl font-semibold tracking-tight text-white md:text-5xl">Visual page ideas that can scale into SEO traffic</h2>
+          <p class="mt-4 text-base leading-7 text-slate-300 md:text-lg">Turn content into page groups for sports, local markets, comparisons, case studies, technology, funding, and blogs.</p>
+        </div>
+
+        <div class="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+          <article class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04]"><div class="relative h-64 overflow-hidden"><img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1200&q=80" alt="Basketball" class="h-full w-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-[#06111f] via-[#06111f]/35 to-transparent"></div><div class="absolute bottom-5 left-5 right-5"><h3 class="text-2xl font-semibold">Basketball</h3><p class="mt-2 text-sm text-white/85">Visual-first landing page</p></div></div></article>
+          <article class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04]"><div class="relative h-64 overflow-hidden"><img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=1200&q=80" alt="Volleyball" class="h-full w-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-[#06111f] via-[#06111f]/35 to-transparent"></div><div class="absolute bottom-5 left-5 right-5"><h3 class="text-2xl font-semibold">Volleyball</h3><p class="mt-2 text-sm text-white/85">Visual-first landing page</p></div></div></article>
+          <article class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04]"><div class="relative h-64 overflow-hidden"><img src="https://images.unsplash.com/photo-1495567720989-cebdbdd97913?auto=format&fit=crop&w=1200&q=80" alt="LED vs Static" class="h-full w-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-[#06111f] via-[#06111f]/35 to-transparent"></div><div class="absolute bottom-5 left-5 right-5"><h3 class="text-2xl font-semibold">LED vs Static</h3><p class="mt-2 text-sm text-white/85">Quick buyer comparison</p></div></div></article>
+          <article class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04]"><div class="relative h-64 overflow-hidden"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80" alt="ROI planning" class="h-full w-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-[#06111f] via-[#06111f]/35 to-transparent"></div><div class="absolute bottom-5 left-5 right-5"><h3 class="text-2xl font-semibold">ROI planning</h3><p class="mt-2 text-sm text-white/85">Funding and proposal support</p></div></div></article>
+          <article class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04]"><div class="relative h-64 overflow-hidden"><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80" alt="Technology" class="h-full w-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-[#06111f] via-[#06111f]/35 to-transparent"></div><div class="absolute bottom-5 left-5 right-5"><h3 class="text-2xl font-semibold">Technology</h3><p class="mt-2 text-sm text-white/85">Short visual explanation</p></div></div></article>
+          <article class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04]"><div class="relative h-64 overflow-hidden"><img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80" alt="Blog" class="h-full w-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-[#06111f] via-[#06111f]/35 to-transparent"></div><div class="absolute bottom-5 left-5 right-5"><h3 class="text-2xl font-semibold">Blog strategy</h3><p class="mt-2 text-sm text-white/85">Content funnel concepts</p></div></div></article>
+        </div>
+      </section>
+    </section>
+
+    <section id="contact" class="tab-panel bg-[#06111f]">
+      <section id="quote-section" class="border-t border-white/10 bg-[linear-gradient(180deg,#07111d_0%,#050b13_100%)] px-6 py-24 text-white md:px-10 lg:px-12">
+        <div class="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[.9fr_1.1fr]">
+          <div class="overflow-hidden rounded-[2rem] border border-white/10">
+            <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1400&q=80" alt="Gym" class="h-full min-h-[420px] w-full object-cover" />
+          </div>
+          <div class="rounded-[2rem] border border-white/10 bg-white/[0.04] p-8 shadow-2xl shadow-black/20">
+            <h3 class="text-3xl font-semibold text-white">Request a quote</h3>
+            <p class="mt-3 text-slate-300">Keep the form short and let the imagery do the selling.</p>
+            <form class="mt-6 grid gap-5 md:grid-cols-2">
+              <div class="md:col-span-2">
+                <label class="block text-sm text-slate-200">School or Organization</label>
+                <input class="mt-2 w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 text-white outline-none" placeholder="Enter school name" />
+              </div>
+              <div>
+                <label class="block text-sm text-slate-200">Full Name</label>
+                <input class="mt-2 w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 text-white outline-none" placeholder="Enter your name" />
+              </div>
+              <div>
+                <label class="block text-sm text-slate-200">Email</label>
+                <input class="mt-2 w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 text-white outline-none" placeholder="you@school.org" />
+              </div>
+              <div class="md:col-span-2">
+                <label class="block text-sm text-slate-200">Project Notes</label>
+                <textarea class="mt-2 min-h-32 w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 text-white outline-none" placeholder="Tell us about your venue, goals, or timeline"></textarea>
+              </div>
+              <div class="md:col-span-2">
+                <button type="button" class="w-full rounded-full bg-cyan-400 py-4 text-slate-950 transition hover:bg-cyan-300">Submit Quote Request</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <div class="fixed bottom-4 left-1/2 z-50 w-[92%] -translate-x-1/2 md:hidden">
+    <div class="flex items-center justify-between rounded-full border border-white/10 bg-[#06111f]/90 px-4 py-3 glass shadow-2xl shadow-black/40">
+      <div>
+        <p class="text-sm font-medium text-white">Ready to upgrade your court?</p>
+        <p class="text-[11px] text-slate-300">Fast quote. Simple next step.</p>
+      </div>
+      <a href="#quote-section" class="rounded-full bg-cyan-400 px-4 py-2 text-sm text-slate-950 transition hover:bg-cyan-300">Get Quote</a>
+    </div>
+  </div>
+
+  <script>
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const tabPanels = document.querySelectorAll('.tab-panel');
+
+    function activateTab(id) {
+      tabButtons.forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.tab === id);
+      });
+      tabPanels.forEach(panel => {
+        panel.classList.toggle('active', panel.id === id);
+      });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => activateTab(btn.dataset.tab));
+    });
+
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const toggle = item.querySelector('.faq-toggle');
+      toggle.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        faqItems.forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+
+    function formatCurrency(num) {
+      return '$' + Number(num).toLocaleString();
+    }
+
+    function calculateROI() {
+      const sponsors = Number(document.getElementById('sponsors').value) || 0;
+      const price = Number(document.getElementById('price').value) || 0;
+      const cost = Number(document.getElementById('cost').value) || 0;
+      const years = Number(document.getElementById('years').value) || 0;
+
+      const annualRevenue = sponsors * price;
+      const payback = annualRevenue > 0 ? (cost / annualRevenue).toFixed(1) : '0.0';
+      const totalRevenue = annualRevenue * years;
+      const profit = totalRevenue - cost;
+
+      document.getElementById('annualRevenue').textContent = formatCurrency(annualRevenue);
+      document.getElementById('payback').textContent = payback + ' years';
+      document.getElementById('totalRevenue').textContent = formatCurrency(totalRevenue);
+      document.getElementById('profit').textContent = formatCurrency(profit);
+    }
+
+    ['sponsors', 'price', 'cost', 'years'].forEach(id => {
+      document.getElementById(id).addEventListener('input', calculateROI);
+    });
+
+    calculateROI();
+  </script>
+</body>
+</html>
