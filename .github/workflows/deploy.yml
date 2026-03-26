@@ -23,5 +23,4 @@ jobs:
 
       - name: Deploy via rsync
         run: |
-          rsync -avz --delete ./ \
-          wpengine@scorerstabledev.ssh.wpengine.net:/home/wpengine/sites/scorerstabledev/
+          rsync -avz --delete ./ wpengine@scorerstabledev.ssh.wpengine.net:/home/wpengine/sites/scorerstabledev/
