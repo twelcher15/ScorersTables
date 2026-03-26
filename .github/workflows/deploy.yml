@@ -15,14 +15,14 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup SSH
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.WPE_SSHG_KEY_PRIVATE_FRESH }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan scorerstabldev.ssh.wpengine.net >> ~/.ssh/known_hosts
+  run: |
+    mkdir -p ~/.ssh
+    echo "${{ secrets.WPE_SSHG_KEY_PRIVATE_FRESH }}" > ~/.ssh/wpengine_key
+    chmod 600 ~/.ssh/wpengine_key
+    ssh-keyscan scorerstabledev.ssh.wpengine.net >> ~/.ssh/known_hosts
 
       - name: Deploy via rsync
-        run: |
-          rsync -avz --delete \
-            -e "ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no" \
-            ./ wpengine@scorerstabldev.ssh.wpengine.net:/home/wpengine/sites/scorerstabldev/
+  run: |
+    rsync -avz --delete \
+      -e "ssh -i ~/.ssh/wpengine_key -o StrictHostKeyChecking=no" \
+      ./wpengine@scorerstabledev.ssh.wpengine.net:/home/wpengine/sites/scorerstabledev/
