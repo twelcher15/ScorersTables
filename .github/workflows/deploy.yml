@@ -22,5 +22,7 @@ jobs:
           ssh-keyscan scorerstabldev.ssh.wpengine.net >> ~/.ssh/known_hosts
 
       - name: Deploy via rsync
-        run: |
-          rsync -avz --delete ./ wpengine@scorerstabldev.ssh.wpengine.net:/home/wpengine/sites/scorerstabldev/
+  run: |
+    rsync -avz --delete \
+      -e "ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no" \
+      ./ wpengine@scorerstabldev.ssh.wpengine.net:/home/wpengine/sites/scorerstabldev/
