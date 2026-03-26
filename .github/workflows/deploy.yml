@@ -23,4 +23,4 @@ jobs:
 
       - name: Deploy via rsync
   run: |
-    rsync -avz --delete -e "ssh -i ~/.ssh/wpengine_key -o StrictHostKeyChecking=no" ./ wpengine@scorerstabledev.ssh.wpengine.net:/home/wpengine/sites/scorerstabledev/
+    rsync -avz --delete -e "ssh -i ~/.ssh/wpengine_key -o StrictHostKeyChecking=no" ./ wpengine@scorerstabldev.ssh.wpengine.net:/home/wpengine/sites/scorerstabldev/
