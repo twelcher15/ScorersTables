@@ -21,6 +21,6 @@ jobs:
           chmod 600 ~/.ssh/wpengine_key
           ssh-keyscan scorerstabldev.ssh.wpengine.net >> ~/.ssh/known_hosts
 
-      - name: Deploy via rsync
-  run: |
-    rsync -avz --delete -e "ssh -i ~/.ssh/wpengine_key -o StrictHostKeyChecking=no" ./ wpengine@scorerstabldev.ssh.wpengine.net:/home/wpengine/sites/scorerstabldev/
+            - name: Deploy via rsync
+        run: |
+          rsync -avz --delete -e "ssh -i ~/.ssh/wpengine_key -o StrictHostKeyChecking=no" ./ wpengine@scorerstabldev.ssh.wpengine.net:/home/wpengine/sites/scorerstabldev/
