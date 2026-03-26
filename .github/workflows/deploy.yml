@@ -19,7 +19,7 @@ jobs:
           mkdir -p ~/.ssh
           echo "${{ secrets.WPE_SSHG_KEY_PRIVATE_FRESH }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan git.wpengine.com >> ~/.ssh/known_hosts
+          ssh-keyscan scorerstabldev.ssh.wpengine.net >> ~/.ssh/known_hosts
 
       - name: Deploy via rsync
         run: |
