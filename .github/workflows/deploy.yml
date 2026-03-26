@@ -14,8 +14,14 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Deploy to WP Engine
-        uses: wpengine/github-action-wpe-site-deploy@v3.2.9
-        with:
-          WPE_SSHG_KEY_PRIVATE: ${{ secrets.WPE_SSHG_KEY_PRIVATE_FRESH }}
-          WPE_ENV: scorerstabldev
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.WPE_SSHG_KEY_PRIVATE_FRESH }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan git.wpengine.com >> ~/.ssh/known_hosts
+
+      - name: Deploy via rsync
+        run: |
+          rsync -avz --delete ./ \
+          wpengine@scorerstabledev.ssh.wpengine.net:/home/wpengine/sites/scorerstabledev/
